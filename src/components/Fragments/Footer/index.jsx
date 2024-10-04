@@ -1,9 +1,10 @@
 import React from "react";
+import FooterLink from "./FooterLink";
 
 export default function Footer() {
   return (
     <div className="bg-gray-900">
-      <div className="max-w-2xl mx-auto text-white py-10">
+      <div className="max-w-2xl mx-auto text-white py-6">
         <div className="text-center">
           <h3 className="text-3xl mb-3">WatchList</h3>
           <p>"Your ultimate movie and TV show tracker"</p>
@@ -32,20 +33,15 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-14 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-          <p className="order-2 md:order-1 mt-8 md:mt-0">
+        <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+          <p className="order-2 md:order-1 mt-4 md:mt-0">
             &copy; WatchList {new Date().getFullYear()}
           </p>
           <div className="order-1 md:order-2">
-            <a href="#about-us" className="px-2  hover:underline">
-              About us
-            </a>
-            <a href="#watch-list" className="px-2 border-l  hover:underline">
+            <FooterLink href="about-us">About Us</FooterLink>
+            <FooterLink href="#watch-list" addClass="border-l">
               Watch List!
-            </a>
-            <a href="#contact-us" className="px-2 border-l  hover:underline">
-              Contact us
-            </a>
+            </FooterLink>
           </div>
         </div>
       </div>
