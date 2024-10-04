@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className={`fixed w-full text-slate-200 bg-slate-900 shadow-lg md:shadow-none transition-all duration-300 ${
+      className={`fixed w-full text-slate-200 bg-slate-900 shadow-lg md:shadow-none transition-all duration-300 z-[999] ${
         isScrolled ? "md:bg-slate-900" : "md:bg-transparent"
       }`}
     >
